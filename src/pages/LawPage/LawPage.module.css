@@ -1,0 +1,124 @@
+.lawPage > section {
+  padding: 1rem;
+}
+
+.serviceGrid > section {
+  padding: 1rem;
+  border: solid 1px;
+}
+
+.serviceGrid > section > h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  color: gold;
+  line-height: 1
+}
+
+.serviceGrid > section > ul {
+  /* padding-inline: 2rem; */
+  list-style: none;
+}
+
+.serviceGrid > section > ul > li{
+  /* padding-inline: 2rem; */
+  margin-bottom: 1rem;
+}
+
+.hero {
+  display: grid;
+  /* min-height: 100vh; */
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  border-bottom: solid white 1px;
+}
+
+.hero > h2 {
+  font-size: 2.5rem;
+}
+
+.lawPageImageContainer {
+  
+}
+/* heading styles */
+
+.heading {
+  
+}
+
+.headingTitle {
+  font-weight: bold;
+  font-size: 3rem;
+  color: gold;
+  border-bottom: solid 1px;
+  padding: 1rem;
+}
+
+.headingDescription {
+  font-size: 1.25rem;
+}
+
+.serviceGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding-block: 2.5rem;
+  padding-inline: 1rem;
+  /* justify-content: center;
+  align-items: center; */
+  margin: 0 auto;
+  max-width: 800px;
+  /* border: solid; */
+}
+
+.serviceGrid > section {
+  border-radius: .5rem;
+}
+
+/* corporate And Business Law */
+
+.corporateAndBusinessLaw {
+
+}
+
+/* .corporateAndBusinessLawHeading {
+  font-size: 1.5rem;
+  font-weight: bold;
+} */
+
+/* banking And Financial Law */
+
+.bankingAndFinancialLaw {
+
+}
+/* civil And Commercial Litigation */
+
+.civilAndCommercialLitigation {
+
+}
+
+/* family And Personal Law */
+
+.familyAndPersonalLaw {
+
+}
+
+/* executional Legal Services */
+
+.executionalLegalServices {
+
+
+}
+
+/* intellectual Property Law */
+
+.intellectualPropertyLaw {
+
+}
+
+/* international Legal Services */
+
+.internationalLegalServices {
+
+
+}
