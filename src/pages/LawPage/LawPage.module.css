@@ -1,40 +1,100 @@
+.lawPage {
+  /* border-bottom: solid 1px white; */
+}
+
 .lawPage > section {
   padding: 1rem;
 }
 
-.serviceGrid > section {
+.serviceGridWrapper > section {
   padding: 1rem;
   border: solid 1px;
 }
 
-.serviceGrid > section > h3 {
+.serviceGridWrapper > section > h3 {
   font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 0.75rem;
+  margin-bottom: 1rem;
   color: gold;
-  line-height: 1
+  line-height: 1;
+  text-align: center;
 }
 
-.serviceGrid > section > ul {
+.serviceGridWrapper > section > ul {
   /* padding-inline: 2rem; */
   list-style: none;
 }
 
-.serviceGrid > section > ul > li{
+.serviceGridWrapper > section > ul > li{
   /* padding-inline: 2rem; */
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  /* color: hsl(0, 0%, 0%); */
 }
 
 .hero {
   display: grid;
-  /* min-height: 100vh; */
-  place-items: center;
+  min-height: 100vh;
+  /* place-items: center; */
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  border-bottom: solid white 1px;
+  align-items: center;
+  /* background-color: black; */
+  color: white;
+  /* border-bottom: solid white 1px; */
+  background-image: 
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  url('../../assets/trio-people-bg.avif');
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: center;
 }
 
-.hero > h2 {
+.hero > div {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInDown 1000ms ease-out forwards;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); /* Start from slightly below */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* End at normal position */
+  }
+}
+
+/* 
+.hero > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.hero > div > h1 {
+  font-size: 1.5rem;
+}
+
+.hero > div > p {
   font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  max-width: 40ch;
+}
+
+.callToActionBtn {
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1em 2em;
+  background-color: limegreen;
+  font-weight: bold;
+  color: white;
+  /* border: solid white 1px; */
+}
+
+.callToActionBtn:hover {
+  background-color: green;
 }
 
 .lawPageImageContainer {
@@ -48,10 +108,11 @@
 
 .headingTitle {
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: gold;
-  border-bottom: solid 1px;
-  padding: 1rem;
+  /* border-bottom: solid 1px; */
+  /* padding: 1rem; */
+  margin-bottom: 1rem;
 }
 
 .headingDescription {
@@ -59,20 +120,33 @@
 }
 
 .serviceGrid {
+  background-color: hsl(210, 100%, 20%);
+  padding: 1rem;
+}
+
+.serviceGrid > h2 {
+  color: gold;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+.serviceGridWrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   padding-block: 2.5rem;
   padding-inline: 1rem;
-  /* justify-content: center;
-  align-items: center; */
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1200px;
   /* border: solid; */
+  color: white;
 }
 
-.serviceGrid > section {
+.serviceGridWrapper > section {
   border-radius: .5rem;
+  border: 1px solid white;
 }
 
 /* corporate And Business Law */

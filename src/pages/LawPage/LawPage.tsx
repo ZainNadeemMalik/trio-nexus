@@ -1,7 +1,7 @@
 import styles from "./LawPage.module.css"
-import triolawpagephoto from '../../assets/triolawpagephoto.avif';
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Header/Footer/Footer";
+import { Link } from "react-router-dom";
 
 
 
@@ -11,23 +11,34 @@ export const LawPage = () => {
     <Header />
     <div className={styles.lawPage}>
 
-      <section className={styles.heading}>
-        <h1 className={styles.headingTitle}>Trio Law Consultants (Legal Services Division) </h1>
-      </section>
+      {/* <section className={styles.heading}>
+        <h1 className={styles.headingTitle}>Trio Law Consultants</h1>
+      </section> */}
 
       <section className={styles.hero}>
-        <h2>This segment offers comprehensive legal solutions, covering corporate, financial, 
-        commercial, and individual legal needs. </h2>
-        <div className={styles.lawPageImageContainer}>
-          <img src={triolawpagephoto} alt="law-page-img" />
+        
+        <div>
+        <h1 className={styles.headingTitle}>Trio Law Consultants</h1>
+
+<p>We offer comprehensive legal solutions, covering corporate, financial, 
+commercial, and individual legal needs. </p>
+
+<Link to="/contact" className={styles.callToActionBtn}>Contact Us</Link>
         </div>
+    
+        {/* <div className={styles.lawPageImageContainer}>
+          <img src={triolawpagephoto} alt="law-page-img" />
+        </div> */}
 
       </section>
 
       {/* Corporate and business law */}
 
-      <div className={styles.serviceGrid}>
 
+      <div className={styles.serviceGrid}>
+  <h2>Our Services</h2>
+
+<div className={styles.serviceGridWrapper}>
       <section className={styles.corporateAndBusinessLaw}>
         
         <h3 className={styles.corporateAndBusinessLawHeading}>Corporate & Business Law </h3>
@@ -129,6 +140,7 @@ export const LawPage = () => {
 
       </section>
 
+      </div>
       </div>
 
     </div>

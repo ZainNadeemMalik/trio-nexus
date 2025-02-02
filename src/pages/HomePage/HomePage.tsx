@@ -9,8 +9,11 @@ export const HomePage = () => {
       <div className={styles.logoContainer}>
         <img src={triologo} alt="trio-logo" />
       </div>
+      
+<div className={styles.titleContainer}>
+      <h1 className={styles.title}>Trio Nexus</h1>
 
-      <h1 className={styles.title}>The Ultimate Nexus for Legal, Educational, and IT Services</h1>
+</div>
 
       <p className={styles.serviceText}>What we can do for you:</p>
 

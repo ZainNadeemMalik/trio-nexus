@@ -1,20 +1,35 @@
+.header {
+  background-color: black;
+}
+
 .headerNav {
   display: flex;
-  padding: 1rem;
-  justify-content: space-around;
-  border-bottom: solid white 1px;
-  margin-bottom: 1rem;
+  padding-inline: 3.5rem;
+  /* padding-block: 0.5rem; */
+  align-items: center;
+  /* border-bottom: solid white 1px; */
 }
 
 .headerNav > a {
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   /* flex-grow: 1; */
   text-align: center;
+  padding: 1rem;
 }
 
 .headerNav > a:hover {
   cursor: pointer;
-  box-shadow: 0 5px 0 white;
+  /* box-shadow: 0 5px 0 white; */
+}
+
+.trioLogo {
+  margin-right: 1rem;
+}
+
+.trioLogo img{
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
 }
