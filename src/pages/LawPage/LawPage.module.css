@@ -1,47 +1,21 @@
 .lawPage {
-  /* border-bottom: solid 1px white; */
+
 }
 
 .lawPage > section {
   padding: 1rem;
 }
 
-.serviceGridWrapper > section {
-  padding: 1rem;
-  border: solid 1px;
-}
-
-.serviceGridWrapper > section > h3 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  color: gold;
-  line-height: 1;
-  text-align: center;
-}
-
-.serviceGridWrapper > section > ul {
-  /* padding-inline: 2rem; */
-  list-style: none;
-}
-
-.serviceGridWrapper > section > ul > li{
-  /* padding-inline: 2rem; */
-  margin-bottom: 0.5rem;
-  /* color: hsl(0, 0%, 0%); */
-}
+/* ---------------HERO SECTION--------------- */
 
 .hero {
   display: grid;
   min-height: 100vh;
-  /* place-items: center; */
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   align-items: center;
-  /* background-color: black; */
   color: white;
-  /* border-bottom: solid white 1px; */
   background-image: 
-  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
   url('../../assets/istockphoto-1347652268-612x612.jpg');
   background-blend-mode: darken;
   background-size: cover;
@@ -52,6 +26,7 @@
   opacity: 0;
   transform: translateY(-20px);
   animation: fadeInDown 1000ms ease-out forwards;
+  padding: 1rem;
 }
 
 @keyframes fadeInDown {
@@ -65,32 +40,33 @@
   }
 }
 
-/* 
 .hero > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
+  max-width: 1200px;
+}
 
 .hero > div > h1 {
-  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+  font: var(--h1);
+  margin-bottom: 1rem;
+  color: gold;
 }
 
 .hero > div > p {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
   max-width: 40ch;
 }
 
 .callToActionBtn {
+  display: inline-block;
   text-decoration: none;
   border: none;
   border-radius: 0.5rem;
-  padding: 1em 2em;
+  padding: .75em 1.5em;
   background-color: limegreen;
   font-weight: bold;
   color: white;
-  /* border: solid white 1px; */
+  text-transform: uppercase;
 }
 
 .callToActionBtn:hover {
@@ -100,33 +76,17 @@
 .lawPageImageContainer {
   
 }
-/* heading styles */
 
-.heading {
-  
-}
-
-.headingTitle {
-  font-weight: bold;
-  font-size: 2.5rem;
-  color: gold;
-  /* border-bottom: solid 1px; */
-  /* padding: 1rem; */
-  margin-bottom: 1rem;
-}
-
-.headingDescription {
-  font-size: 1.25rem;
-}
+/* ----------------SERVICE GRID------------------- */
 
 .serviceGrid {
   background-color: hsl(210, 100%, 20%);
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 .serviceGrid > h2 {
   color: gold;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-align: center;
 
@@ -140,13 +100,30 @@
   padding-inline: 1rem;
   margin: 0 auto;
   max-width: 1200px;
-  /* border: solid; */
   color: white;
 }
 
 .serviceGridWrapper > section {
   border-radius: .5rem;
   border: 1px solid white;
+  padding: 1rem;
+}
+
+.serviceGridWrapper > section > h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: gold;
+  line-height: 1;
+  text-align: center;
+}
+
+.serviceGridWrapper > section > ul {
+  list-style: none;
+}
+
+.serviceGridWrapper > section > ul > li{
+  margin-bottom: 0.5rem;
 }
 
 /* corporate And Business Law */
@@ -154,11 +131,6 @@
 .corporateAndBusinessLaw {
 
 }
-
-/* .corporateAndBusinessLawHeading {
-  font-size: 1.5rem;
-  font-weight: bold;
-} */
 
 /* banking And Financial Law */
 

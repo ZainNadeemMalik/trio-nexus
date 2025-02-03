@@ -11,19 +11,17 @@ export const LawPage = () => {
     <Header />
     <div className={styles.lawPage}>
 
-      {/* <section className={styles.heading}>
-        <h1 className={styles.headingTitle}>Trio Law Consultants</h1>
-      </section> */}
+{/* ---------------HERO SECTION--------------- */}
 
       <section className={styles.hero}>
         
         <div>
-        <h1 className={styles.headingTitle}>Trio Law Consultants</h1>
+          <h1 className={styles.headingTitle}>Trio Law Consultants</h1>
 
-<p>We offer comprehensive legal solutions, covering corporate, financial, 
-commercial, and individual legal needs. </p>
+          <p>We offer comprehensive legal solutions, covering corporate, financial, 
+          commercial, and individual legal needs. </p>
 
-<Link to="/contact" className={styles.callToActionBtn}>Contact Us</Link>
+          <Link to="/contact" className={styles.callToActionBtn}>Contact Us</Link>
         </div>
     
         {/* <div className={styles.lawPageImageContainer}>
@@ -32,7 +30,7 @@ commercial, and individual legal needs. </p>
 
       </section>
 
-      {/* Corporate and business law */}
+      {/* ---------------Corporate and business law--------------- */}
 
 
       <div className={styles.serviceGrid}>

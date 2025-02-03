@@ -1,5 +1,20 @@
 /* css reset */
 
+/* css variables */
+
+:root {
+  --ff: "Inter", sans-serif;
+
+  --h1: bold 1.125rem/1.4em var(--ff);
+  --h2: bold 1rem/1.4em var(--ff);
+  --p: 1rem/1.4em var(--ff);
+  --p: 0.875rem/1.4em var(--ff);
+
+  --gray: hsl(0, 0%, 100%);
+  --gray-70: hsl(0, 0%, 70%);
+  --gray-0: hsl(0, 0%, 0%);
+}
+
 /* makes sizing simpler */
 
 *,
