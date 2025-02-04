@@ -2,11 +2,29 @@
   text-align: center;
   padding: 3rem;
   font-size: 1.5rem;
-  /* border-top: solid 1px white; */
+  border-top: solid 1px white;
+  /* margin-top: 1rem; */
   background-color: black;
   color: white;
 }
 
+.footerColumn {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.footerContact > p {
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 30%);
+}
+
+.footerSocials > div{
+  margin-bottom: 1rem;
+  color: hsl(0, 0%, 30%);
+}
+
 .footer > p {
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }

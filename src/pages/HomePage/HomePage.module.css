@@ -16,6 +16,29 @@
   margin-bottom: 1rem;
 }
 
+/* ----------------NAV--------------- */
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  /* margin-bottom: 3rem; */
+  border-bottom: solid 1px hsl(0, 0%, 30%);
+}
+
+.nav > a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 1em;
+}
+
+.nav > a:hover {
+  cursor: pointer;
+  box-shadow: 0 2px 0 white;
+}
+
 /* logo description */
 
 .titleTextContainer {
@@ -74,6 +97,7 @@
   justify-content: center;
   gap: 1rem;
   min-height: 80vh;
+  margin-block: 3rem;
 }
 
 @keyframes fadeInDown {
@@ -91,25 +115,30 @@
 .servicesList > li {
   text-align: center;
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
+  min-width: 400px;
 }
 
 .servicesList > li:first-child {
+
  background: url("../../assets/hexagon-left-red.svg");
  background-position: center;
  background-repeat: no-repeat;
-
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .servicesList >li:nth-child(2) {
-  background-color: yellow;
-  color: black;
+  background: url("../../assets/hexagon-middle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .servicesList > li:last-child {
-  background: url("../../assets/hexagon-right-blue.svg");
+  background: url("../../assets/hexagon-right.svg");
   background-repeat: no-repeat;
   background-position: center;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .servicesList > li > a {
@@ -128,4 +157,44 @@
 .servicesList > li > a:hover {
   transform: translateY(-5px);
   cursor: pointer;
+}
+
+.servicesList > li > a > p{
+  font-size: 1rem;
+  color: hsl(0, 0%, 80%);
+  margin-block: 1rem;
+}
+
+/* ----------------BLOGS and ARTICLE-------------- */
+
+.blogArticlesTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid white;
+  margin-bottom: 1rem;
+}
+
+.blogArticle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.blogArticle:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.blogArticleImageContainer > img {
+  width: 300px;
+  height: 150px;
+}
+
+.blogArticleText > h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.blogArticleText > p {
+  color: hsl(0, 0%, 60%);
 }
